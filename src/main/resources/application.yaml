@@ -1,0 +1,24 @@
+debug: false
+trace: false
+server:
+  error:
+    include-exception: true
+    include-stacktrace: always
+  tomcat:
+    accesslog:
+      enabled: true
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+  jetty:
+    accesslog:
+      enabled: true
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  mvc:
+    servlet:
+      path: /
